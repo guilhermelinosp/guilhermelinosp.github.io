@@ -17,10 +17,15 @@
       min-height: 100vh;
     }
     h1 {
-      color: #fff;
       font-size: clamp(1.5rem, 5vw, 3rem);
       font-weight: 300;
       letter-spacing: 2px;
+    }
+    .c {
+      background: linear-gradient(135deg, #00d4ff, #7b2ff7, #ff6b6b, #f7c948);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
   </style>
 </head>
@@ -28,15 +33,20 @@
   <h1 id="t">Hellnet</h1>
   <script>
     const f = [
-      'Syne','Playfair Display','Bebas Neue','Press Start 2P',
-      'Sacramento','Monoton','Black Ops One','Silkscreen',
-      'Rubik Mono One','Bungee','Permanent Marker','Anton',
-      'Orbitron','Unbounded','Space Grotesk','DM Serif Text',
-      'Faster One','Honk',
+      ['Syne',''],['Playfair Display','c'],['Bebas Neue',''],
+      ['Press Start 2P','c'],['Sacramento',''],['Monoton','c'],
+      ['Black Ops One',''],['Silkscreen','c'],['Rubik Mono One',''],
+      ['Bungee','c'],['Permanent Marker',''],['Anton','c'],
+      ['Orbitron',''],['Unbounded','c'],['Space Grotesk',''],
+      ['DM Serif Text','c'],['Faster One',''],['Honk',''],
     ];
     const e = document.getElementById('t');
     let i = 0;
-    setInterval(() => { e.style.fontFamily = `'${f[i++%f.length]}'`; }, 100);
+    setInterval(() => {
+      const [fn, cls] = f[i++%f.length];
+      e.style.fontFamily = `'${fn}'`;
+      e.className = cls;
+    }, 100);
   </script>
 </body>
 </html>

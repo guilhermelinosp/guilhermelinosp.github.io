@@ -45,6 +45,7 @@
       'Righteous','Shrikhand','Sigmar','Staatliches',
       'Ultra','VT323',
     ];
+    for (let i = f.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [f[i], f[j]] = [f[j], f[i]]; }
     const e = document.getElementById('t');
     let i = 0;
     setInterval(() => { e.style.fontFamily = `'${f[i++%f.length]}'`; }, 150);

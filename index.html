@@ -18,9 +18,9 @@
     }
     h1 {
       color: #fff;
-      font-size: clamp(4rem, 12vw, 10rem);
-      font-weight: 400;
-      transition: font-family 0.15s ease;
+      font-size: clamp(1.5rem, 5vw, 3rem);
+      font-weight: 300;
+      letter-spacing: 2px;
     }
   </style>
 </head>
@@ -36,7 +36,7 @@
     ];
     const e = document.getElementById('t');
     let i = 0;
-    setInterval(() => { e.style.fontFamily = `'${f[i++%f.length]}'`; }, 400);
+    setInterval(() => { e.style.fontFamily = `'${f[i++%f.length]}'`; }, 100);
   </script>
 </body>
 </html>

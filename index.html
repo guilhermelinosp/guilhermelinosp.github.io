@@ -4,113 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hellnet</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Azeret+Mono:wght@400;500&family=Playfair+Display:wght@900&family=Bebas+Neue&family=Press+Start+2P&family=Sacramento&family=Monoton&family=Black+Ops+One&family=Silkscreen&family=Rubik+Mono+One&family=Bungee&family=Permanent+Marker&family=Anton&family=Orbitron:wght@900&family=Unbounded:wght@900&family=Space+Grotesk:wght@700&family=DM+Serif+Text:ital@1&family=Faster+One&family=Honk&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #08080c;
-      color: #e0e0e0;
-      font-family: 'Syne', sans-serif;
+      background: #000;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      text-align: center;
-      padding: 2rem;
-      overflow-x: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
-    .container { max-width: 800px; width: 100%; }
-
-    .title {
-      font-size: clamp(4rem, 15vw, 9rem);
-      line-height: 1;
-      min-height: 1.2em;
-      margin-bottom: 0.5rem;
-      transition: font-family 0.4s ease;
-      background: linear-gradient(135deg, #00d4ff 0%, #7b2ff7 50%, #ff6b6b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    h1 {
+      color: #fff;
+      font-size: clamp(3rem, 10vw, 8rem);
+      font-weight: 400;
+      letter-spacing: -2px;
     }
-
-    .sub {
-      font-family: 'Azeret Mono', monospace;
-      font-size: 0.9rem;
-      color: #555;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 3rem;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .links a {
-      color: #666;
-      text-decoration: none;
-      font-family: 'Azeret Mono', monospace;
-      font-size: 0.75rem;
-      letter-spacing: 1px;
-      padding: 0.5rem 1rem;
-      border: 1px solid #181820;
-      border-radius: 6px;
-      transition: all 0.3s;
-    }
-    .links a:hover {
-      color: #00d4ff;
-      border-color: #00d4ff40;
-      background: #00d4ff06;
-    }
-
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.7rem;
-      color: #222;
-      font-family: 'Azeret Mono', monospace;
-      letter-spacing: 2px;
-    }
-    .footer span { color: #00d4ff; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="title" id="title">Hellnet</div>
-    <div class="sub" id="sub">private cloud infrastructure</div>
-
-    <div class="links">
-      <a href="https://headlamp.hellnet.com.br">Headlamp</a>
-      <a href="https://hubble.hellnet.com.br">Hubble</a>
-      <a href="https://longhorn.hellnet.com.br">Longhorn</a>
-      <a href="https://grafana.hellnet.com.br">Grafana</a>
-      <a href="https://github.com/guilhermelinosp">GitHub</a>
-    </div>
-
-    <div class="footer"><span>4</span> nodes &middot; <span>talos</span> + <span>cilium</span> &middot; <span>brazil</span></div>
-  </div>
-
-  <script>
-    const fonts = [
-      'Syne', 'Playfair Display', 'Bebas Neue', 'Press Start 2P',
-      'Sacramento', 'Monoton', 'Black Ops One', 'Silkscreen',
-      'Rubik Mono One', 'Bungee', 'Permanent Marker', 'Anton',
-      'Orbitron', 'Unbounded', 'Space Grotesk', 'DM Serif Text',
-      'Faster One', 'Honk',
-    ];
-
-    const el = document.getElementById('title');
-    let i = 0;
-    setInterval(() => {
-      i = (i + 1) % fonts.length;
-      el.style.fontFamily = `'${fonts[i]}', sans-serif`;
-    }, 1200);
-  </script>
+  <h1>Hellnet</h1>
 </body>
 </html>

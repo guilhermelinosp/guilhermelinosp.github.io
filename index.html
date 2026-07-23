@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hellnet</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=JetBrains+Mono:wght@300&family=DM+Serif+Display:ital@1&family=Space+Grotesk:wght@300&family=Playfair+Display:ital@1&family=Syne:wght@400&family=Fraunces:opsz@9..144&family=Outfit:wght@300&family=Zilla+Slab:wght@300&family=Sora:wght@300&family=PT+Serif:ital@1&family=Unbounded:wght@300&family=Lora:ital@1&family=Bricolage+Grotesque:wght@300&family=Source+Serif+4:opsz@8..60&family=Archivo:wght@300&family=Newsreader:opsz@6..72&family=Public+Sans:wght@300&family=STIX+Two+Text:ital@1&family=Chillax:wght@300&family=Karla:wght@300&family=Teko:wght@300&family=Libre+Baskerville:ital@1&family=Satoshi:wght@300&family=Gambarino:wght@400&family=Clash+Display:wght@300&family=Manrope:wght@300&family=Cabinet+Grotesk:wght@300&family=Work+Sans:wght@300&family=Nunito:wght@300&family=Hanken+Grotesk:wght@300&family=Quicksand:wght@300&family=Raleway:wght@300&family=IBM+Plex+Serif:ital@1&family=Montserrat:wght@300&family=Plus+Jakarta+Sans:wght@300&family=Bitter:ital@1&family=General+Sans:wght@300&family=Crimson+Text:ital@1&family=DM+Mono:wght@300&family=Urbanist:wght@300&family=Epilogue:wght@300&family=Chivo:wght@300&family=Bai+Jamjuree:wght@300&family=Trispace:wght@300&family=Spline+Sans:wght@300&family=Hahmlet:wght@300&family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=JetBrains+Mono:wght@300&family=DM+Serif+Display:ital@1&family=Space+Grotesk:wght@300&family=Playfair+Display:ital@1&family=Syne:wght@400&family=Fraunces:opsz@9..144&family=Outfit:wght@300&family=Zilla+Slab:wght@300&family=Sora:wght@300&family=PT+Serif:ital@1&family=Unbounded:wght@300&family=Lora:ital@1&family=Bricolage+Grotesque:wght@300&family=Source+Serif+4:opsz@8..60&family=Archivo:wght@300&family=Newsreader:opsz@6..72&family=Public+Sans:wght@300&family=STIX+Two+Text:ital@1&family=Chillax:wght@300&family=Karla:wght@300&family=Teko:wght@300&family=Libre+Baskerville:ital@1&family=Satoshi:wght@300&family=Gambarino:wght@400&family=Clash+Display:wght@300&family=Manrope:wght@300&family=Cabinet+Grotesk:wght@300&family=Work+Sans:wght@300&family=Nunito:wght@300&family=Hanken+Grotesk:wght@300&family=Quicksand:wght@300&family=Raleway:wght@300&family=IBM+Plex+Serif:ital@1&family=Montserrat:wght@300&family=Plus+Jakarta+Sans:wght@300&family=Bitter:ital@1&family=General+Sans:wght@300&family=Crimson+Text:ital@1&family=DM+Mono:wght@300&family=Urbanist:wght@300&family=Epilogue:wght@300&family=Chivo:wght@300&family=Bai+Jamjuree:wght@300&family=Trispace:wght@300&family=Spline+Sans:wght@300&family=Hahmlet:wght@300&family=Azeret+Mono:wght@300&family=Literata:opsz@7..72&family=Prompt:wght@300&family=Mulish:wght@300&family=Figtree:wght@300&family=Noto+Serif:ital@1&family=Josefin+Sans:wght@300&family=Amiri:ital@1&family=Poppins:wght@300&family=Rubik:wght@300&family=Schibsted+Grotesk:wght@300&family=Hepta+Slab:wght@300&family=Ubuntu:wght@300&family=Oswald:wght@300&family=Cabin:wght@300&family=Merriweather:ital@1&family=Fira+Sans:wght@300&family=Overpass:wght@300&family=Domine:wght@400&family=Exo+2:wght@300&family=Asap:wght@300&family=Assistant:wght@300&family=Abhaya+Libre:wght@400&family=Comfortaa:wght@300&family=Titillium+Web:wght@300&family=Forum&family=Geologica:wght@300&family=Golos+Text:wght@400&family=REM:wght@300&family=Anybody:wght@300&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -40,10 +38,17 @@
       'Bitter','General Sans','Crimson Text','DM Mono',
       'Urbanist','Epilogue','Chivo','Bai Jamjuree',
       'Trispace','Spline Sans','Hahmlet','Azeret Mono',
+      'Literata','Prompt','Mulish','Figtree',
+      'Noto Serif','Josefin Sans','Amiri','Poppins',
+      'Rubik','Schibsted Grotesk','Hepta Slab','Ubuntu',
+      'Oswald','Cabin','Merriweather','Fira Sans',
+      'Overpass','Domine','Exo 2','Asap',
+      'Assistant','Abhaya Libre','Comfortaa','Titillium Web',
+      'Forum','Geologica','Golos Text','REM',
+      'Anybody',
     ];
     const e = document.getElementById('t');
-    let i = 0;
-    setInterval(() => { e.style.fontFamily = `'${f[i++%f.length]}'`; }, 150);
+    setInterval(() => { e.style.fontFamily = `'${f[Math.random()*f.length|0]}'`; }, 150);
   </script>
 </body>
 </html>
